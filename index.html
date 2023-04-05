@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>🐍 Snake Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <!-- Game Stats -->
+        <div class="stat-container">
+            <p>Points: <span id="score"></span></p>
+            <p>&#x1F3C6; High: <span id="high-score">0</span></p>
+        </div>
+
+        <!-- Game Screen -->
+        <div class="game-container">
+            <div class="end-screen">
+                <div>
+                    <span class="score">300</span>
+                    <span class="end-message">Game Over &#x1f622;</span>
+                    <button id="play">PLAY</button>
+                </div>
+            </div>
+            <canvas id="canvas" width="300" height="300"></canvas>
+        </div>
+        <p class="note"><span>&#x1F4A1; Tips : </span>use keyboard key <strong>"P"</strong> to start the game.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="snake.js"></script>
+</body>
+
+</html>
